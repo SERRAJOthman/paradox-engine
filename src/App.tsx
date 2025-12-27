@@ -9,11 +9,7 @@ import { LambdaView } from './components/modes/LambdaView';
 import { ModeSelector } from './components/ui/ModeSelector';
 
 // Placeholder components for now
-const PlaceholderView = ({ name, color }: { name: string, color: string }) => (
-    <div className={`w-full h-full flex items-center justify-center text-4xl font-bold ${color}`}>
-        {name} VIEW
-    </div>
-);
+// PlaceholderView removed as it was unused
 
 function App() {
     const mode = useStore((state) => state.mode);

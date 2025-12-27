@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, AlertTriangle, Eye, HelpCircle } from 'lucide-react';
-import { useStore } from '../../../store/useStore';
+import { X } from 'lucide-react';
 
 const PHILOSOPHICAL_INTRUSIONS = [
     "What if Gantt charts are just elaborate lies we tell ourselves?",
@@ -24,7 +23,6 @@ const GLITCH_EFFECTS = [
 ];
 
 export const EntropyEngine = () => {
-    const chaosLevel = useStore((state) => state.chaosLevel);
     const [intrusions, setIntrusions] = useState<{ id: number, text: string, x: number, y: number }[]>([]);
     const [glitchClass, setGlitchClass] = useState("");
 

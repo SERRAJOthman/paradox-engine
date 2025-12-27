@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { ChevronRight, AlertCircle, TrendingUp, Calendar } from 'lucide-react';
+import { AlertCircle, TrendingUp, Calendar } from 'lucide-react';
 
 export const ThetaView = () => {
     const [confidence, setConfidence] = useState(50);
-    const [selectedTimeline, setSelectedTimeline] = useState<number | null>(null);
+    const [, setSelectedTimeline] = useState<number | null>(null);
 
     const predictions = [
         { id: 1, date: 'Mar 15', event: 'Material Shortage', probability: 85, impact: 'High', type: 'risk' },

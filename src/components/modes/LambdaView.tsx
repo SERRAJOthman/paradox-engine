@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { Play, Pause, Square } from 'lucide-react';
+import { Play, Pause } from 'lucide-react';
 
 export const LambdaView = () => {
     const [seconds, setSeconds] = useState(0);

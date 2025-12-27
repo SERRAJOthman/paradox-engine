@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { EntropyEngine } from './alpha/EntropyEngine';
-import { useStore } from '../../store/useStore';
 
 export const AlphaView = () => {
     return (

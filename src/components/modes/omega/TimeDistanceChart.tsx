@@ -88,10 +88,11 @@ export const TimeDistanceChart = ({ tasks }: TimeDistanceChartProps) => {
             })
             .attr("stroke-width", 2)
             .attr("class", "cursor-pointer hover:opacity-80 transition-opacity")
-            .on("mouseover", function (event, d) {
-                d3.select(this).attr("stroke-width", 4);
-                // Tooltip logic could go here
-            })
+            .on("mouseover", function (_event, _d) {
+                d3.select(this)
+                    .attr("stroke-width", 3)
+                    .attr("opacity", 1);
+            })// Tooltip logic could go here
             .on("mouseout", function () {
                 d3.select(this).attr("stroke-width", 2);
             });
